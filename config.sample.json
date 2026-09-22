@@ -1,0 +1,34 @@
+{
+  "_comment": "Copy to config.json and edit. Command-line arguments always override these values.",
+
+  "SourcePath": ["E:\\SQLBackups"],
+  "Filter": ["*.bak", "*.trn", "*.dif"],
+  "Recurse": true,
+  "MinAgeSeconds": 60,
+  "StabilityCheckSeconds": 5,
+  "MaxFileAgeDays": 14,
+
+  "AccountName": "stgsqlbackups",
+  "Container": "sqlbackups",
+  "BlobPrefix": "SQLPROD01",
+  "DatePartition": true,
+  "AccessTier": "Cool",
+  "CreateContainer": false,
+
+  "SecretFile": "C:\\Claudeprojects\\AZCopy Alternative\\secrets\\sas.txt",
+  "SecretType": "Sas",
+  "EndpointSuffix": "core.windows.net",
+
+  "BlockSizeMB": 64,
+  "Concurrency": 4,
+  "MaxRetries": 6,
+  "TimeoutSec": 900,
+  "MaxMBps": 0,
+  "VerifyMd5": false,
+
+  "DeleteSourceAfterUpload": false,
+  "DeleteSourceOlderThanDays": 0,
+
+  "StatePath": "C:\\Claudeprojects\\AZCopy Alternative\\state",
+  "LogPath": "C:\\Claudeprojects\\AZCopy Alternative\\logs"
+}

@@ -1,0 +1,9 @@
+# Runtime data - never commit
+secrets/
+state/
+logs/
+config.json
+
+# Local scratch
+*.tmp
+*.log
